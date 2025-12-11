@@ -6,6 +6,7 @@
 
 Neste Exemplo que você vai estar pegando esta modificado para a IPSN, eu tambem vou estar deixando anexado todas as facções possiveis e existente de Lancer já prontas para facilitar para todos.
 
+[Link das Facções já personalizadas](https://github.com/Dante3147/lancer-briefings-PT-BR/releases/tag/Lancer-Fac%C3%A7%C3%B5es)
 ## Creditos/Credits
 
 - Alkyama#2737 (discord) for the original [Figma Template](figma.com/community/file/983540597915480981) used as reference.
@@ -34,10 +35,10 @@ Novamente, eu não sou o criador, eu sou somente um mero tradutor
 
 ## Build Scripts
 
-`npm run dev` - Serve the webapp with hot reloads (for development work)  
-`npm run build` - Build for production  
-`npm run serve OR npm run preview` - Locally preview production build  
-`npm run format` - Format all code files using `prettier` based on rules set in `.prettierrc.json` (for development work)  
+`npm run dev` - Disponibilize a aplicação web com recarregamento a quente (para trabalho de desenvolvimento).  
+`npm run build` - Build para colocar na hospedagem
+`npm run serve OR npm run preview` - Visualizar localmente a versão de produção
+`npm run format` - Formate todos os arquivos de código usando `prettier` com base nas regras estabelecidas em `.prettierrc.json`(para trabalho de desenvolvimento)  
 
 ## Customização
 
