@@ -4,9 +4,9 @@
 
 **[Live Demo](https://lancer.kuenaimaku.com/)** neste link você vera um exemplo original do criador do gerenciador de missões de lancer
 
-Go over mission briefings within the LANCER Universe in style by showing your players a fully animated mission briefing screen, with a Mirrorsmoke Mercenary Company theme.
+Neste Exemplo que você vai estar pegando esta modificado para a IPSN, eu tambem vou estar deixando anexado todas as facções possiveis e existente de Lancer já prontas para facilitar para todos.
 
-## Credits
+## Creditos/Credits
 
 - Alkyama#2737 (discord) for the original [Figma Template](figma.com/community/file/983540597915480981) used as reference.
 - [VantaJS](https://www.vantajs.com/) for the slick 3d openGL backgrounds.
