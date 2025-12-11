@@ -2,7 +2,7 @@
 
 # Lancer Briefings
 
-**[Live Demo](https://lancer.kuenaimaku.com/)**
+**[Live Demo](https://lancer.kuenaimaku.com/)** neste link você vera um exemplo original do criador do gerenciador de missões de lancer
 
 Go over mission briefings within the LANCER Universe in style by showing your players a fully animated mission briefing screen, with a Mirrorsmoke Mercenary Company theme.
 
@@ -11,7 +11,9 @@ Go over mission briefings within the LANCER Universe in style by showing your pl
 - Alkyama#2737 (discord) for the original [Figma Template](figma.com/community/file/983540597915480981) used as reference.
 - [VantaJS](https://www.vantajs.com/) for the slick 3d openGL backgrounds.
 
-## Requirements
+Novamente, eu não sou o criador, eu sou somente um mero tradutor
+
+## Requisitos
 
 - Node (v14+)
 - Light Text Editor (VSCode Recommended)
@@ -26,9 +28,9 @@ Go over mission briefings within the LANCER Universe in style by showing your pl
   - TypeScript Vue Plugin (Volar)
   - Vue Language Features (Volar)
 
-## Setup
+## Configuração inicial
 
-`npm install`
+`npm install` - começe dando este comando antes de tudo
 
 ## Build Scripts
 
@@ -37,59 +39,62 @@ Go over mission briefings within the LANCER Universe in style by showing your pl
 `npm run serve OR npm run preview` - Locally preview production build  
 `npm run format` - Format all code files using `prettier` based on rules set in `.prettierrc.json` (for development work)  
 
-## Customization
+## Customização
 
-Customization is handled in a couple of places.
+A personalização é feita em alguns locais.
 
 ### _base.css
 
-This file holds a majority of the colors, fonts, and sizes of the webapp. Play around with the values in the marked customization section.
+Este arquivo contém a maioria das cores, fontes e tamanhos do aplicativo web. Experimente alterar os valores na seção de personalização marcada.
 
 ### Index.html
 
-This file houses the [VantaJS](https://www.vantajs.com/) background used in the web application. Go to the site, mess with the different effect options, and once you're ready, replace the `VANTA.GLOBE` script with your customized one. Note that if you use a different effect, you'll have to replace the script url above it with one from [their CDN repository](https://cdn.jsdelivr.net/npm/vanta@latest/dist/).
+Este arquivo contém o [VantaJS](https://www.vantajs.com/) plano de fundo usado no aplicativo web. Acesse o site, explore as diferentes opções de efeitos e, quando estiver pronto, substitua o `VANTA.GLOBE` script com o seu personalizado. Observe que, se você usar um efeito diferente, precisará substituir o URL do script acima por um de [their CDN repository](https://cdn.jsdelivr.net/npm/vanta@latest/dist/).
 
-### /public folder
+### /pasta "public"
 
-This folder holds all of the local image, audio and video assets.
+Esta pasta contém todos os arquivos locais de imagem, áudio e vídeo..
 
-- `/faction-logos` - SVG files for the logos of each major faction, currently used for mapping icons to mech manufacturers.
-- `/icons` - If you want to replace the icons used across the application, this is where you'd swap them.
-- `/pilots` - This is where the images of pilots and their bios are held. Filenames MUST match the `callsign` property on pilots.
-- `/mechs` - This is where the images of mechs are held. Filenames MUST match the `mech` property on pilots.
-- `bullet.webp` - This replaces the default bullet point in Markdown areas.
-- `planet.webm` - This is the planet rotation video used in the header.
-- `startup.ogg` - This is the sound that plays on page load.
+- `/faction-logos` - Arquivos SVG com os logotipos de cada facção principal, atualmente usados ​​para mapear ícones para fabricantes de mechas.
+- `/icons` - Se você deseja substituir os ícones usados ​​em todo o aplicativo, é aqui que você os troca.
+- `/pilots` - Esta seção armazena imagens dos pilotos e suas biografias. Os nomes dos arquivos DEVEM corresponder ao `callsign` das fichas dos pilotos exemplo o do meu personagem é "ARK" ou seja quando for lançar a foto do seu personagem na pasta das fotos não coloque o nome, coloque o codinome dele.
+- `/mechs` - É aqui que as imagens dos mechs são armazenadas. Os nomes dos arquivos DEVEM corresponder à propriedade `mech` dos pilotos, o mesmo serve para os mechas, não coloque o nome do seu mecha,mas sim do codinome do piloto.
+- `bullet.webp` - Isso substitui o marcador padrão em áreas Markdown..
+- `planet.webm` - Este é o vídeo sobre a rotação do planeta usado no cabeçalho..
+- `startup.ogg` - Este é o som que toca ao carregar a página, se você trocar o arquivo certifique do formato ser .ogg.
 
-### src/assets folder
-- `/clocks` - This is where the json for relevant mission or overarching story Clocks are held. You can add and configure clocks by adding or modifying json objects to the list.
-- `/events` - This is where the json for relevant mission or overarching story Clocks are held. You can add and configure clocks by adding or modifying json objects to the list.
-- `/LCPs` - This is where unzipped LCPs will be expected to be read from. I have kept an example of how to create a proper import via `wallflower-data`.
-- `/missions` - This is where the summaries of missions are held. The filename MUST match the `slug` property within the App's data.
-- `/pilots` - This is where the json of pilots (exported from Comp/Con) are held. Filenames MUST match the `callsign` property on pilots.
-- `/reserves` - This is where the json of reserves for the pilots are held. Any reserves on each individual pilot's exported data will also be added to the reserves.
-- `/info/general-config.json` - Edit this to change which mission loads initially, set the pilot information, and other ease-of-use options that have been introduced to modify how the site works. Below are the values you might have to change.
-  - `initialSlug` - Controls what mission file is selected on startup. This MUST match the slug of a markdown file within the `/public/missions/` directory.
-  - `planetPath` - The path (relative to the root directory of this repository) to the .webm or .gif file to use for the planet video element.
-  - `defaultTitle` - Sets the prefix for the title of each page (the text that shows up in your browser tab).
-  - `icon` - The path (relative to the root directory of this repository) to the image that should be used for the favicon. This will be displayed in the browser tab for this website.
-  - `header` - Reads from the `header` JSON object to determine what text to place on each element of the `Header.vue` Component.
+### pasta src/assets
+- `/clocks` - Aqui são armazenados os arquivos JSON referentes às missões relevantes ou aos relógios da história principal. Você pode adicionar e configurar relógios adicionando ou modificando objetos JSON à lista, eu já deixei os exemplos de como criar os relógios no codigo junto com os comentarios.
+- `/events` - Aqui são armazenados os arquivos JSON referentes às missões relevantes ou aos relógios da história principal. Você pode adicionar e configurar relógios adicionando ou modificando objetos JSON à lista.
+- `/LCPs` - É aqui que os arquivos LCP descompactados deverão ser lidos. Incluí um exemplo de como criar uma importação adequada via `wallflower-data`.
+- `/missions` - É aqui que ficam armazenados os resumos das missões. O nome do arquivo DEVE corresponder ao `slug` propriedade dentro dos dados do aplicativo, deixei comentarios de instruções para tentar auxiliar melhor.
+- `/pilots` - É aqui que os arquivos JSON dos pilotos (exportados do Comp/Con) são armazenados. Os nomes dos arquivos DEVEM corresponder ao `callsign` das fichas dos pilotos.
+- `/reserves` - É aqui que ficam armazenados os arquivos JSON de reservas dos pilotos. Quaisquer reservas referentes aos dados exportados de cada piloto também serão adicionadas às reservas,deixei um exmeplo para tentar facilitar com a ficha do meu personagem.
+- `/info/general-config.json` - EUse este comando para alterar qual missão é carregada inicialmente, definir as informações do piloto e outras opções de facilidade de uso que foram introduzidas para modificar o funcionamento do site. Abaixo estão os valores que você pode precisar alterar.
+  - `initialSlug` - Controla qual arquivo de missão é selecionado na inicialização. Este DEVE corresponder ao slug de um arquivo markdown dentro do `/public/missions/` diretório.
+  - `planetPath` - O caminho (relativo ao diretório raiz deste repositório) para o arquivo .webm ou .gif a ser usado como elemento de vídeo do planeta.
+[Link do programa que o criador usa para criar os planetas](https://deep-fold.itch.io/pixel-planet-generator)
+  - `defaultTitle` - Define o prefixo do título de cada página (o texto que aparece na aba do seu navegador).
+  - `icon` - O caminho (relativo ao diretório raiz deste repositório) para a imagem que deve ser usada como favicon. Esta imagem será exibida na aba do navegador para este site.
+  - `header` - Lê o objeto JSON `header` para determinar qual texto colocar em cada elemento do componente `Header.vue`.
 
 ### /src/components/pilot.vue
 
-This file contains all the import of lcp-related material. Look at line 150 for an example of how to extract and import LCPs into this website.
+Este arquivo contém toda a importação de material relacionado a LCPs. Veja a linha 150 para um exemplo de como extrair e importar LCPs para este site, caso não funcione peço paciencia, tive um pequeno problema na importação de LCPS.
 
 
-## Hosting Recommendations
+## Recomendações de hospedagem
 
-I would strongly recommend using [Netlify](https://www.netlify.com/) for hosting, as there's no cost for hosting, has Continuous Deployment, and they'll provide a url. Register for an account, and click the `New Site from Git` button.
-On the next page, pick the git service you used to fork this repo with, and authenticate. On the next page, select the `lancer-briefings` repository. If you can't see the repository listed on the page, click the `Can’t see your repo here? Configure the Netlify app on <git site>` link at the bottom of the page.
-Finally, make sure the branch being deployed is `master`, the `base directory` field is blank, the `build command` is `npm run build`, and the publish directory is `dist`.
+Recomendação do criador é uma curiosidade, esta hospedagem que ele recomendou é a mesma do compcon
 
-Once the site builds remotely, click on the link provided in the `site overview` tab and make sure everything looks right.
+Eu recomendo fortemente o uso de [Netlify](https://www.netlify.com/) Para hospedagem, já que não há custo para hospedagem, possui Implantação Contínua e eles fornecerão um URL. Registre-se para obter uma conta e clique no `New Site from Git` botão.
+Na próxima página, escolha o serviço Git que você usou para criar um fork deste repositório e autentique-se. Na próxima página, selecione o `lancer-briefings` repositório. Se você não conseguir ver o repositório listado na página, clique no `Can’t see your repo here? Configure the Netlify app on <git site>` Link na parte inferior da página.
+Por fim, certifique-se de que a branch que está sendo implantada seja `master`, o campo `base directory` esteja em branco, o `build command` seja `npm run build` e o diretório de publicação seja `dist`.
 
-Alternatively, if you use github, you can probably rely on github-pages. Take a look at the [vite documentation](https://vitejs.dev/guide/static-deploy.html#github-pages) for more info.
+Após criar o site remotamente, clique no link fornecido na guia `site overview` e verifique se tudo está correto.
 
-## Usage within FoundryVTT
+Alternativamente, se você usa o GitHub, provavelmente pode contar com o GitHub Pages. Dê uma olhada no [vite documentation](https://vitejs.dev/guide/static-deploy.html#github-pages) Para mais informações.
 
-install the [Inline Webviewer](https://foundryvtt.com/packages/inlinewebviewer) module and use the new button to send websites to your players - namely this one. Best viewed at 1920x1080.
+## Utilização no FoundryVTT
+
+instalar o módulo [Inline Webviewer](https://foundryvtt.com/packages/inlinewebviewer) Use o novo botão do módulo para enviar sites aos seus jogadores, incluindo este aqui. Recomendamos visualizar em 1920x1080.
