@@ -95,6 +95,7 @@ Após criar o site remotamente, clique no link fornecido na guia `site overview`
 
 Alternativamente, se você usa o GitHub, provavelmente pode contar com o GitHub Pages. Dê uma olhada no [vite documentation](https://vitejs.dev/guide/static-deploy.html#github-pages) Para mais informações.
 
+Sobre a recomendação da hospedagem eu ainda não testei, assim que hospedar pretendo colocar um tutorial aqui
 ## Utilização no FoundryVTT
 
 instalar o módulo [Inline Webviewer](https://foundryvtt.com/packages/inlinewebviewer) Use o novo botão do módulo para enviar sites aos seus jogadores, incluindo este aqui. Recomendamos visualizar em 1920x1080.
