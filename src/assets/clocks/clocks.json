@@ -1,2 +1,46 @@
 [
+
+    {
+        "_commentario1": "sempre que for adicionar um novo relogio, lembre-se de adicionar uma virgula após a chave exmeplo '},' ",
+        "name": "teste",
+
+        "description": "descrição de exemplo",
+
+        "type": "HISTÓRIA // RELACIONAMENTO",
+
+        "color": "#F00",
+
+        "value": 0,
+
+        "max": 7
+
+    },
+    { 
+        "name": "teste2",
+        "description": "descrição de exemplo",
+
+        "type": "HISTÓRIA // RELACIONAMENTO",
+
+        "color": "#F00", "_commentario2": "cor do relogio",
+
+        "value": 0, "_commentario3": "aqui você define o numero atual do relogio",
+
+        "max": 7
+        },
+        
+        { 
+        "name": "teste3",
+
+        "description": "descrição de exemplo",
+
+        "type": "HISTÓRIA // RELACIONAMENTO",
+
+        "color": "#F00",
+
+        "value": 0,
+
+        "max": 7
+        }
+
+
 ]
